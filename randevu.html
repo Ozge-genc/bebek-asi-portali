@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Randevu Al</title>
+        <link rel="icon" href="aşı.jpeg"type=image/x-icon/>
+        <meta charset="utf-8">
+        <style type="text/css">
+          /*metin seçmeyi engelliyor*/
+      html{-webkit-touch-callout: none;
+             -webkit-user-select: none;
+             -khtml-user-select: none;
+             -moz-user-select: none;
+             -ms-user-select: none;
+             user-select: none;}
+        #a{background-color:#1d2325;
+           margin: -10px;
+           height: 66px;
+           position: fixed;
+           width: 100%;
+         }
+        #b{background-color: #1d2325;
+           height: 66px;
+           width:15%;
+           font-size: 25px;
+           border: none;
+           margin-left: 300px;
+           font-family:'Segoe Print';
+         }
+         .c{background-color: #1d2325;
+           height: 66px;
+           width:15%;
+           font-size: 25px;
+           border: none;
+           font-family:'Segoe Print';
+         }
+         a:link {font-weight:bold;color: aliceblue;}
+         a:visited{color: aliceblue;}
+         a:hover{background-color:#1d2325;color:#f0bf00;text-decoration:none;}
+         a:active{background: color #1d2325;;color:#f0bf00;font-style:italic;}
+         #başadön{background-color:#1d2325;
+                  height: 58px;
+                  width: 101.2%;
+                  margin-top:168px;
+                  margin-left:-10px;
+                  margin-right:-20px;
+                  margin-bottom:-20px;
+                  color: aliceblue;}
+         #sam{ margin-left: 110px;}
+         #sun{ margin-left: 410px ;
+               margin-top: -18px;}
+         #ço{ margin-left: 680px ;
+               margin-top: -18px;}
+         #rum{ margin-left: 965px ;
+               margin-top: -18px;}
+        #an{ margin-left: 1225px ;
+               margin-top: -18px;}
+        li{margin-left: 20px;
+           font-size: 20px;
+           margin-top: 15px;}
+        ul{margin-left: -20px;
+           margin-top:45px;
+           font-size: 20px;}
+        #xyx{margin-top:40px;
+             margin-left:10px;}
+        #xyxyx{margin-top:-215px;
+               margin-left: 430px;}
+        #xyzm{margin-top: -213px;
+              margin-left: 340px ;}
+        #xyxzx{margin-top: -216px;
+               margin-left: 760px;}
+        body{background-image: url("Bebek.jpg");
+            background-repeat:no-repeat ;
+            background-position: 100% 0%;
+            background-size: 100%;}
+               #yazi{
+            /*kayan yazının sayfanın üst köşesine uzaklığı */
+                margin-left:260px;
+            /*sayfa kenarı ile sayfa arasındaki boşluğun boyutunu verir*/
+                padding:30px;
+                width: 450px;
+            /*yazı boyutu*/
+                font-size:18px;
+            /*kayan yazının arka planı, yazı rengi kenarlık şekli ve rengi*/
+                background:pink;
+                color:black;
+                border:dashed black;
+            }
+        </style>
+        <!--aşıyı listeye ekleme butonunun rengi border özellikleri-->
+        <style>
+            input{
+                padding:8px 30px;
+                margin-right:10px;
+            }
+            button{
+                background: palevioletred;
+                color:white;
+                border:double;
+                padding:10px 30px;
+            }
+        </style>
+        <style>
+           /*sayfa metin ayarları*/
+        p {font-size: 15px; color:black  }
+        b{font-size: 20px;color:black} 
+        </style>
+    </head>
+    <body>
+      <style type="text/css">
+        h1{text-align:center;}
+        /*arka plan resim ayarları*/
+        body{background-image: url("Bebek.jpg");
+        background-repeat:no-repeat ;
+        background-position: 100% 0%;
+        background-size: 100%;}
+        #iks{font-size: 15px;
+             margin-left: 15px;}
+        .ayl a:link {font-weight:bold;color: rgb(6, 33, 185);}
+        .ayl a:visited{color: rgb(6, 33, 185);}
+        .ayl a:hover{background-color:#ffffff;color:#7f0000;text-decoration:none;}
+        .ayl a:active{background: color #ffffff;;color:#7f0000;font-style:italic;}
+    </style>
+      <div id="a">
+        <button class="c"> <a href=index.html style="text-decoration: none">Aşı Portalı</a></button>
+        <button id="b"> <a href=bilgilendirme.html style="text-decoration: none">Bilgilendirme</a></button>
+        <button class="c"> <a href=aşılar.html style="text-decoration: none">Aşılar</a></button>
+        <button class="c"> <a href=randevu.html style="text-decoration: none">Randevu Al</a></button>
+        <button class="c"> <a href=yardım.html style="text-decoration: none">Yardım</a></button>
+      </div>
+      x
+      <p>x</p>
+      <div id="yazi">Doktorunuza danışmadan bebeğinize aşı yaptırmayınız !!!    </div>  
+      <script>    
+      KayanYazi=function(nesne,zaman){
+           let yaziNesne=nesne;
+          
+          setInterval(function(){
+              let yazi  = yaziNesne.innerHTML;
+              let harf  = yazi.substring(0,1);
+              let kalan = yazi.substring(1,yazi.length);
+              kalan=kalan+harf
+              yaziNesne.innerHTML=kalan;
+          }, zaman);
+      }
+      var nesne=document.getElementById("yazi"); 
+      /*kayan yazının geçme hızını belirler*/
+      KayanYazi(nesne,120);  
+          </script>
+      <ul>Bebeğinize aşı randevusu almak için aşağıdaki adresleri yada telefon numarasını kullanabilirsiniz
+            <li>Sağlık Bakanlığı randevu hattı: 182</li>
+            <li class="ayl">E-Nabiz: <a href="https://enabiz.gov.tr/">E-Nabız</a></li>
+            <li class="ayl">MHRS: <a href="https://www.mhrs.gov.tr/">MHRS</a></li>
+            <li>En yakın sağlık kuruluşuna giderek oradan da randevu oluşturabilirsiniz.</li>
+      </ul>
+      <p id="list"><h3>Randevu Almayı Kolaylaştırmak İçin Bebeğinizin Olduğu Aşıları Listeye Ekleyiniz</h3>
+      <!--girilen aşılar ile liste oluşturur-->
+        <input type="text" name="" id="aşı"><button id="ekle">Aşıyı Listeye Ekle</button><br>
+         <ul id="liste">
+            </ul>
+      <script>
+        const aşı =document.querySelector("#aşı");
+        const ekle =document.querySelector("#ekle");
+        const liste =document.querySelector("#liste");
+        ekle.onclick=function(){
+        let li=document.createElement("li");
+        li.textContent=aşı.value;
+        liste.appendChild(li);
+        aşı.value="";
+        aşı.focus();
+        }
+      </script>      
+           <!--sağ tık özelliğini engeller-->
+      <script>
+        window.addEventListener('contextmenu',function(e){e.preventDefault();},false);
+      </script>
+   </body>
+</html>

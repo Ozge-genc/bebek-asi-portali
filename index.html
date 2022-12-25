@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Aşı Portalı</title>
+        <link rel="icon" href="aşı.jpeg"type=image/x-icon/>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*metin seçmeyi engelliyor*/
+        html{-webkit-touch-callout: none;
+             -webkit-user-select: none;
+             -khtml-user-select: none;
+             -moz-user-select: none;
+             -ms-user-select: none;
+             user-select: none;}
+        #a{background-color:#1d2325;
+           margin: -10px;
+           height: 66px;
+           position: fixed;
+           width: 100%;
+         }
+        #b{background-color: #1d2325;
+           height: 66px;
+           width:15%;
+           font-size: 25px;
+           border: none;
+           margin-left: 300px;
+           font-family:'Segoe Print';
+         }
+         .c{background-color: #1d2325;
+           height: 66px;
+           width:15%;
+           font-size: 25px;
+           border: none;
+           font-family:'Segoe Print';
+         }
+         a:link {font-weight:bold;color: aliceblue;}
+         a:visited{color: aliceblue;}
+         a:hover{background-color:#1d2325;color:#f0bf00;text-decoration:none;}
+         a:active{background: color #1d2325;;color:#f0bf00;font-style:italic;}
+         #başadön{background-color:#1d2325;
+                  height: 58px;
+                  width: 101.2%;
+                  margin-top:168px;
+                  margin-left:-10px;
+                  margin-right:-20px;
+                  margin-bottom:-20px;
+                  color: aliceblue;}
+         #sam{ margin-left: 110px;}
+         #sun{ margin-left: 410px ;
+               margin-top: -18px;}
+         #ço{ margin-left: 680px ;
+               margin-top: -18px;}
+         #rum{ margin-left: 965px ;
+               margin-top: -18px;}
+        #an{ margin-left: 1225px ;
+               margin-top: -18px;}
+        li{margin-left: 20px;
+           font-size: 20px;}
+        #xyx{margin-top:40px;
+             margin-left:10px;}
+        #xyxyx{margin-top:-215px;
+               margin-left: 430px;}
+        #xyzm{margin-top: -213px;
+              margin-left: 340px ;}
+        #xyxzx{margin-top: -216px;
+               margin-left: 760px;}
+               #yazi{
+            /*kayan yazının sayfanın üst köşesine uzaklığı */
+                margin-left:260px;
+            /*sayfa kenarı ile sayfa arasındaki boşluğun boyutunu verir*/
+                padding:20px;
+                width: 200px;
+            /*yazı boyutu*/
+                font-size:18px;
+            /*kayan yazının arka planı, yazı rengi kenarlık şekli ve rengi*/
+                background:lightpink;
+                color:black;
+                border:double black;
+            }
+        </style>
+        <style>
+            /*sayfa metin ayarları */
+        p {font-size: 15px; color:black  }
+        b{font-size: 20px;color:black} 
+            table{
+           /*tablo kenarı kalınlığı ve rengi*/
+            border: 6px double lightsteelblue;
+            /*tablo genişliği ve yüksekliği*/
+            width: 700px;
+            height: 300px;
+            /*metnin hizalanması için*/
+            text-align: center;
+            /*tablo arka plan rengi*/
+            background-color:lavender;
+            /*tablodaki yazıların rengi*/
+            color:black;
+            margin-top:20px;
+        }
+        table td{
+            /*tablo satır rengi ve kenar kalınlığı*/
+            border: 1px solid black;}
+            #tablo-baslik{
+            /*tablonun üst satırındaki yazıları kalın yazar*/
+            font-weight: 700;}
+            </style>
+        </style>
+        <style type="text/css">
+            h1{text-align:center;}
+            /*arka plan resim ayarları*/
+            body{background-image: url("Bebek.jpg");
+            background-repeat:no-repeat ;
+            background-position: 100% 0%;
+            background-size: 100%;}
+            #iks{font-size: 15px;
+                 margin-left: 15px;}
+        </style>
+    </head>
+    <body>
+      <div id="a">
+        <button class="c"> <a href=index.html style="text-decoration: none">Aşı Portalı</a></button>
+        <button id="b"> <a href=bilgilendirme.html style="text-decoration: none">Bilgilendirme</a></button>
+        <button class="c"> <a href=aşılar.html style="text-decoration: none">Aşılar</a></button>
+        <button class="c"> <a href=randevu.html style="text-decoration: none">Randevu Al</a></button>
+        <button class="c"> <a href=yardım.html style="text-decoration: none">Yardım</a></button>
+      </div>
+      x
+      <p>x</p>
+      <div id="kutu"></div>
+      <!--kayan yazının özellikleri-->
+      <div id="yazi"> Aşı Portalına Hoşgeldiniz</div>  
+      <script>    
+      KayanYazi=function(nesne,zaman){
+           let yaziNesne=nesne;
+          
+          setInterval(function(){
+              let yazi  = yaziNesne.innerHTML;
+              let harf  = yazi.substring(0,1);
+              let kalan = yazi.substring(1,yazi.length);
+              kalan=kalan+harf
+              yaziNesne.innerHTML=kalan;
+          }, zaman);
+      }
+      var nesne=document.getElementById("yazi"); 
+      /*kayan yazının geçme hızını belirler*/
+      KayanYazi(nesne,120);  
+          </script>
+      <!--tablo özellikleri ve kodları-->
+      <table border="3" width="10%" cellipadding="50" cellspacing="0" >
+            <!--tablo başlığı-->
+            <caption>***AŞI TAKVİMİ***</caption>
+            <tr id="tablo-baslik">
+                <td>&nbsp;</td>
+                <td>BCG(Verem)</td>
+                <td>HEPATİT B</td>
+                <td>DİFTERİ</td>
+                <td>TETANOZ</td>
+                <td>BOĞMACA</td>
+                <td>ÇOCUK FELCİ</td>
+                <td>HIB</td>
+                <td>KIZAMIK</td>
+                <td>MMR</td>
+                <td>SU ÇİÇEĞİ</td>
+            </tr> 
+            <tr>
+                <td>Doğumda</td>
+                <td>&nbsp;</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>1.Ay</td>
+                <td>&nbsp;</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>2.Ay</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>4.Ay</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>6.Ay</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>7.Ay</td>
+                <td>&nbsp;</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>9.Ay</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>12.Ay</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>✓</td>
+            </tr>
+            <tr>
+                <td>15.Ay</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>18.Ay</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>4-6 Yaş</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>11-12 Yaş</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td> 
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>X</td>
+            </tr>  
+            </tr>   
+        </table>
+        <p id="iks"><b>X:Hekim tarafından gerekli görülürse yapılır.</b>
+            <!--sağ tık özelliğini engeller-->
+      <script>
+        window.addEventListener('contextmenu',function(e){e.preventDefault();},false);
+      </script>
+   </body>
+</html>
